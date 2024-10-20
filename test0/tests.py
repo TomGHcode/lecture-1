@@ -8,7 +8,7 @@ def draw_star(sides, length):
 		return
 
 	angle = 180 - (180 / sides)
-	
+
 	for _ in range(sides):
 		turtle.forward(length)
 		turtle.right(angle)

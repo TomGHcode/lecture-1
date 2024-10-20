@@ -1,2 +1,6 @@
 1234567890
 Test file commit
+Updating f6d05eb..8283719
+Fast-forward
+ test0/tests.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)

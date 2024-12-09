@@ -1,53 +1,36 @@
+
+import logging
 from database import get_db_connection
+
+logging.basicConfig(level=logging.INFO, filename='app.log',
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Funkcija, kas nolasa datus no datubāzes un atgriež tos kā sarakstu
 def fetch_tasks():
-    """
-    Nolasa visus uzdevumus no 'tasks' tabulas.
-
-    Returns:
-        list: Saraksts ar vārdnīcām, kur katrs ieraksts satur 'name' un 'completed'.
-    """
-    conn = get_db_connection()  # Savienojums ar datubāzi
-    cursor = conn.cursor()  # Izveido kursoru SQL vaicājumiem
+    conn = get_db_connection() # Savienojums ar datubāzi
+    cursor = conn.cursor() # Izveido kursoru SQL vaicājumiem
     
     # Izvēlas uzdevuma nosaukumu un izpildes statusu no tabulas
     cursor.execute("SELECT name, completed FROM tasks")
-    tasks = cursor.fetchall()  # Iegūst visus rezultātus
+    tasks = cursor.fetchall()   # Iegūst visus rezultātus
+    conn.close()     #aizver savienojumu
     
-    conn.close()  # Aizver savienojumu ar datubāzi
+    logging.debug("Fetched tasks from database.")
     return tasks
 
-def display_tasks(tasks):
-    """
-    Noformē un izvada uzdevumus uz ekrāna.
-
-    Args:
-        tasks (list): Saraksts ar uzdevumiem no datubāzes.
-    """
-    print("\nUzdevumu saraksts:")
-    print("-" * 30)
-    
-    # Pārbauda, vai ir kādi uzdevumi
+def display_tasks(tasks):   # Noformē un izvada uzdevumus uz ekrāna.
     if not tasks:
-        print("Nav uzdevumu, kas jārāda.")
+        logging.info("No tasks to display.")
         return
-    
-    # Iterē cauri uzdevumiem un izvada tos formatētā tabulā
-    for idx, task in enumerate(tasks, start=1):
-        name = task[0]
-        completed = "Pabeigts" if task[1] else "Nepabeigts"
-        print(f"{idx}. {name} - {completed}")
 
-def main():
-    """
-    Galvenā funkcija, kas nolasa uzdevumus no datubāzes un izvada tos uz ekrāna.
-    """
-    # Iegūst uzdevumus no datubāzes
-    tasks = fetch_tasks()
-    
-    # Izvada uzdevumus uz ekrāna
-    display_tasks(tasks)
+    for idx, task in enumerate(tasks, start=1):
+        name, completed = task['name'], "Pabeigts" if task['completed'] else "Nepabeigts"
+        print(f"{idx}. {name} - {completed}")
+        logging.debug(f"Task displayed: {name} - {completed}")
+
+def main():         # Galvenā funkcija, kas nolasa uzdevumus no datubāzes un izvada tos uz ekrāna.
+    tasks = fetch_tasks()   # Pārbauda, vai ir kādi uzdevumi
+    display_tasks(tasks)    # Izvada uzdevumus uz ekrāna
 
 if __name__ == '__main__':
     main()

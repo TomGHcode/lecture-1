@@ -1,1 +1,2 @@
 The DB is a simple example database, managing migrations.
+It uses python and has a config!

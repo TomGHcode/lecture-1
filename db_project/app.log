@@ -1,0 +1,42 @@
+2025-01-06 00:13:29,410 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_column_tasktype_21.11.2024.sql: no such table: tasks
+2025-01-06 00:13:29,411 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_date_22.11.2024.sql: no such table: tasks
+2025-01-06 00:13:29,419 - INFO - Izpild\u012bta migr\u0101cija: create_table_20.11.2024.sql
+2025-01-06 00:13:29,422 - INFO - No tasks to display.
+2025-01-06 00:13:35,621 - INFO - Izpild\u012bta migr\u0101cija: add_column_tasktype_21.11.2024.sql
+2025-01-06 00:13:35,628 - INFO - Izpild\u012bta migr\u0101cija: add_date_22.11.2024.sql
+2025-01-06 00:13:35,631 - INFO - No tasks to display.
+2025-01-06 00:13:45,769 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_column_tasktype_21.11.2024.sql: no such table: tasks
+2025-01-06 00:13:45,770 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_date_22.11.2024.sql: no such table: tasks
+2025-01-06 00:13:45,778 - INFO - Izpild\u012bta migr\u0101cija: create_table_20.11.2024.sql
+2025-01-06 00:14:02,035 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_column_tasktype_21.11.2024.sql: no such table: tasks
+2025-01-06 00:14:02,036 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_date_22.11.2024.sql: no such table: tasks
+2025-01-06 00:14:02,042 - INFO - Izpild\u012bta migr\u0101cija: create_table_20.11.2024.sql
+2025-01-06 00:14:15,595 - INFO - No tasks to display.
+2025-01-06 00:14:22,312 - INFO - No tasks to display.
+2025-01-06 00:17:10,603 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_column_tasktype_21.11.2024.sql: no such table: tasks
+2025-01-06 00:17:10,604 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_date_22.11.2024.sql: no such table: tasks
+2025-01-06 00:17:10,612 - INFO - Izpild\u012bta migr\u0101cija: create_table_20.11.2024.sql
+2025-01-06 00:17:18,022 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_column_tasktype_21.11.2024.sql: no such table: tasks
+2025-01-06 00:17:18,024 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_date_22.11.2024.sql: no such table: tasks
+2025-01-06 00:17:18,031 - INFO - Izpild\u012bta migr\u0101cija: create_table_20.11.2024.sql
+2025-01-06 00:18:29,362 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_column_tasktype_21.11.2024.sql: no such table: tasks
+2025-01-06 00:18:29,364 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_date_22.11.2024.sql: no such table: tasks
+2025-01-06 00:18:29,373 - INFO - Izpild\u012bta migr\u0101cija: create_table_20.11.2024.sql
+2025-01-06 00:18:33,410 - INFO - Izpild\u012bta migr\u0101cija: add_column_tasktype_21.11.2024.sql
+2025-01-06 00:18:33,419 - INFO - Izpild\u012bta migr\u0101cija: add_date_22.11.2024.sql
+2025-01-06 00:19:32,674 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_column_tasktype_21.11.2024.sql: no such table: tasks
+2025-01-06 00:19:32,675 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju add_date_22.11.2024.sql: no such table: tasks
+2025-01-06 00:19:32,682 - INFO - Izpild\u012bta migr\u0101cija: create_table_20.11.2024.sql
+2025-01-06 00:24:48,109 - INFO - Izpild\u012bta migr\u0101cija: 001_create_table_20.11.2024.sql
+2025-01-06 00:24:48,110 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 002_add_column_tasktype_21.11.2024.sql: duplicate column name: tasktype
+2025-01-06 00:24:48,110 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 003_add_date_22.11.2024.sql: duplicate column name: due_date
+2025-01-06 00:24:48,130 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 002_add_column_tasktype_21.11.2024.sql: duplicate column name: tasktype
+2025-01-06 00:24:48,131 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 003_add_date_22.11.2024.sql: duplicate column name: due_date
+2025-01-06 00:24:52,189 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 002_add_column_tasktype_21.11.2024.sql: duplicate column name: tasktype
+2025-01-06 00:24:52,190 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 003_add_date_22.11.2024.sql: duplicate column name: due_date
+2025-01-06 00:24:52,210 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 002_add_column_tasktype_21.11.2024.sql: duplicate column name: tasktype
+2025-01-06 00:24:52,211 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 003_add_date_22.11.2024.sql: duplicate column name: due_date
+2025-01-06 00:30:06,689 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 002_add_column_tasktype_21.11.2024.sql: duplicate column name: tasktype
+2025-01-06 00:30:06,690 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 003_add_date_22.11.2024.sql: duplicate column name: due_date
+2025-01-06 00:30:14,235 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 002_add_column_tasktype_21.11.2024.sql: duplicate column name: tasktype
+2025-01-06 00:30:14,235 - ERROR - K\u013c\u016bda izpildot migr\u0101ciju 003_add_date_22.11.2024.sql: duplicate column name: due_date

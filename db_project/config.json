@@ -1,3 +1,4 @@
 {
-    "database": "database.sqlite"
+    "database": "database.sqlite",
+    "migrations_folder": "./migrations"
 }

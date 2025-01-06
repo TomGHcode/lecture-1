@@ -3,6 +3,7 @@ import sqlite3
 import os
 from migrate import apply_migrations
 
+
 class TestDatabaseFunctions(unittest.TestCase):
 
     def setUp(self):
